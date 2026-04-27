@@ -1,0 +1,17 @@
+model:
+  embed_dim: 512
+  patch_size: 16
+  num_anchors: 8
+  num_abnormal_prompts: 4
+  hist_capacity: 50
+  sample_ratio: 0.5
+  top_fraction: 0.3
+  gate_threshold: 0.5
+  fusion_temperature: 0.5
+  residual_weight: 0.5
+
+train:
+  lr: 1e-4
+  weight_decay: 1e-4
+  epochs: 50
+  batch_size: 16

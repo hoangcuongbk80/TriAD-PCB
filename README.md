@@ -38,20 +38,6 @@ DATA_ROOT/
 └─ labels.csv             # optional
 ```
 
-### `labels.csv`
-
-If present, it should contain columns:
-
-```csv
-filename,label
-0001.png,0
-0002.png,1
-```
-
-Where `label = 0` means normal and `label = 1` means anomalous.
-
-If `masks/` exists, each mask should use the same filename as the image and contain a binary anomaly map.
-
 ## Training
 
 ```bash

@@ -9,30 +9,7 @@ The project follows the paper’s three-branch design:
 - **Reference Branch**: static few-shot support bank for prototype matching
 - **Fusion**: confidence-aware weighting, residual refinement, and top-q pooling
 
-## Project layout
-
-```text
-triad_pcb/
-├─ configs/triad_pcb.yaml
-├─ scripts/
-│  ├─ train.py
-│  ├─ test_stream.py
-│  └─ export_metrics.py
-├─ src/
-│  ├─ models/
-│  ├─ prompts/
-│  ├─ memory/
-│  ├─ losses/
-│  ├─ data/
-│  ├─ eval/
-│  └─ utils/
-└─ requirements.txt
-```
-
 ## Requirements
-
-
-Dependencies:
 
 - `torch`
 - `torchvision`
@@ -46,9 +23,7 @@ Install them with:
 pip install -r requirements.txt
 ```
 
-## Expected dataset format
-
-The provided loaders expect a simple folder structure:
+## Dataset format
 
 ```text
 DATA_ROOT/
@@ -115,23 +90,6 @@ This script:
 - resets the online memory
 - processes test images one by one in order
 - stores image-level anomaly scores in JSON format
-
-## Metrics
-
-Compute image-level metrics from predictions and labels:
-
-```bash
-python scripts/export_metrics.py \
-  --pred-json outputs/predictions.json \
-  --labels-json /path/to/labels.json \
-  --out outputs/metrics.json
-```
-
-The metrics helper currently reports:
-
-- `I-AUC`
-- `I-AP`
-- `I-F1-max`
 
 ## Configuration
 

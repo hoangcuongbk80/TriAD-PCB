@@ -1,6 +1,6 @@
 # TriAD-PCB
 
-A runnable PyTorch reference implementation of **TriAD-PCB: Online Few-Shot Defect Detection and Segmentation for Printed Circuit Boards**.
+**TriAD-PCB: Online Few-Shot Defect Detection and Segmentation for Printed Circuit Boards**.
 
 The project follows the paper’s three-branch design:
 
@@ -31,9 +31,8 @@ triad_pcb/
 
 ## Requirements
 
-The code is written for Python 3.9+ and PyTorch.
 
-Typical dependencies include:
+Dependencies:
 
 - `torch`
 - `torchvision`
@@ -151,9 +150,3 @@ You can adjust:
 - sampling ratio
 - fusion temperature
 - residual refinement weight
-
-## Notes
-
-- The backbone is implemented as a lightweight CLIP-like PyTorch module so the project can run without external model downloads.
-- The code is structured so you can later replace that backbone with a real CLIP/OpenCLIP implementation.
-- The current implementation is a practical reference base for experimentation and extension.

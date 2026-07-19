@@ -54,8 +54,6 @@ If `masks/` exists, each mask should use the same filename as the image and cont
 
 ## Training
 
-Run offline training with:
-
 ```bash
 python scripts/train.py \
   --data-root /path/to/train_dataset \
@@ -65,16 +63,7 @@ python scripts/train.py \
   --save-dir checkpoints
 ```
 
-The training script:
-
-- loads images from `images/`
-- uses masks when available
-- optimizes the full TriAD-PCB model
-- saves checkpoints after each epoch
-
 ## Streaming inference
-
-Run causal test-time inference with a reference set and a stream set:
 
 ```bash
 python scripts/test_stream.py \
@@ -83,10 +72,3 @@ python scripts/test_stream.py \
   --checkpoint checkpoints/epoch_50.pt \
   --out outputs/predictions.json
 ```
-
-This script:
-
-- builds the reference bank from the reference images
-- resets the online memory
-- processes test images one by one in order
-- stores image-level anomaly scores in JSON format

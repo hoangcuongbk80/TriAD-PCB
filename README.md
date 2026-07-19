@@ -2,7 +2,9 @@
 
 **TriAD-PCB: Online Few-Shot Defect Detection and Segmentation for Printed Circuit Boards**.
 
-The project follows the paper’s three-branch design:
+<p align="center">
+  <img src="./doc/overview.jpg" width="900" alt="Overview">
+</p>
 
 - **Text Branch**: semantic anchors, normal/abnormal prompts, and prompt-conditioned feature generation
 - **Online Branch**: causal historical memory with redundancy-aware sampling and anomaly-aware gating

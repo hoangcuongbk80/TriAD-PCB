@@ -6,6 +6,7 @@
   <img src="./doc/overview.jpg" width="900" alt="Overview">
 </p>
 
+- **Link download masks**: https://drive.google.com/drive/folders/1yC7uz6dnDIqE7xavTo2J0UpPsgN3PRp6?usp=sharing
 - **Text Branch**: semantic anchors, normal/abnormal prompts, and prompt-conditioned feature generation
 - **Online Branch**: causal historical memory with redundancy-aware sampling and anomaly-aware gating
 - **Reference Branch**: static few-shot support bank for prototype matching

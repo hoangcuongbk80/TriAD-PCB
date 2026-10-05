@@ -1,0 +1,22 @@
+name: triad-pcb
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11.10
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - pytorch-cuda=12.1
+  - numpy=2.1.3
+  - pandas=2.2.3
+  - pillow=11.0.0
+  - pyyaml=6.0.2
+  - scikit-learn=1.5.2
+  - scipy=1.14.1
+  - tqdm=4.67.1
+  - pip=24.3.1
+  - pip:
+      - transformers==4.46.3
+      - pytest==8.3.4
+      - ruff==0.8.2

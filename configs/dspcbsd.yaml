@@ -1,0 +1,11 @@
+inherits: base.yaml
+dataset:
+  name: dspcbsd
+  manifest: materials/manifests/dspcbsd.csv
+  image_size: 256
+training:
+  epochs: 50
+  batch_size: 16
+output:
+  root: outputs/dspcbsd
+

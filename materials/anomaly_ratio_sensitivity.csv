@@ -1,0 +1,6 @@
+anomaly_ratio_percent,i_auc,p_ap,pro,mean_step_to_capacity,anomalous_admission_rate_percent
+10,92.5,45.8,92.0,58,0.5
+20,92.4,45.7,91.9,65,0.6
+40,92.1,45.5,91.8,84,0.8
+60,91.7,45.0,91.3,121,1.1
+80,90.9,44.1,90.4,247,1.7

@@ -1,0 +1,57 @@
+backbone:
+  checkpoint: openai/clip-vit-base-patch16
+  image_encoder: frozen
+  text_encoder: frozen
+  trainable_components:
+    - shared visual projection
+    - semantic anchor vectors
+    - normal prompt embeddings
+    - abnormal prompt embeddings
+    - prompt-conditioned generator
+training:
+  independent_seeds: [3407, 4513, 5903]
+  selection_unit: trained model
+validation_selection:
+  source: held-out normal validation images only
+  paired_sample_per_image: 1
+  mask_field: bicubic interpolation of an 8x8 random field
+  affected_fraction: 0.22
+  transformations:
+    - local_texture_noise
+    - local_chromatic_shift
+    - local_structure_displacement
+  primary_score: equal-weight mean of image AUROC and pixel AUROC
+  tie_breaker: pixel average precision
+  test_data_accessed: false
+evaluation:
+  support_size: 4
+  support_seeds: [1103, 2207, 3407, 4513, 5903]
+  stream_seeds: [101, 211, 307, 401, 503, 601, 701, 809, 907, 1009]
+  repetitions_per_model: 50
+  causal_order:
+    - encode current image
+    - score against pre-update history
+    - fuse branch maps
+    - compute image score
+    - apply normality gate
+    - conditionally append current features
+statistics:
+  within_model: arithmetic mean over five support sets and ten stream orders
+  default_manual_paraphrase: mean and sample standard deviation over three training seeds
+  random_anchor_selection: mean and sample standard deviation over five subsets times three training seeds
+  dataset_aggregation: equal-weight arithmetic mean over DsPCBSD+, TDD-Net PCB, and VisA PCB
+metrics:
+  image: [AUROC, maximum F1, average precision]
+  pixel: [AUROC, maximum F1, average precision, PRO]
+anchor_control:
+  retained_candidate_count: 16
+  selected_anchor_count: 8
+  random_subsets: 5
+  random_sampling: uniform without replacement
+  abnormal_prompts_per_anchor: 4
+release_audits:
+  support_test_image_overlap: required_zero
+  support_test_source_overlap: required_zero
+  crop_split_unit: source image or board
+  tdd_exclusion_buffer_pixels: 16
+  incomplete_boundary_crops: discarded

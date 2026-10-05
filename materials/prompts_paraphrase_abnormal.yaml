@@ -1,0 +1,16 @@
+normal_seed_templates:
+  - "a photo of a clean {anchor}"
+  - "a normal {anchor} on a printed circuit board"
+  - "a well-formed {anchor}"
+  - "a high-quality {anchor} component"
+normal_prompt_templates:
+  - "a clean and intact {anchor}"
+  - "a normal {anchor} component"
+  - "a well-formed {anchor} on a printed circuit board"
+  - "an undamaged {anchor}"
+abnormal_prompt_templates:
+  - "a fractured {anchor}"
+  - "a {anchor} containing a visible crack"
+  - "an absent {anchor}"
+  - "a {anchor} affected by contamination"
+

@@ -1,0 +1,10 @@
+anchors:
+  - solder joint
+  - component pad
+  - trace
+  - via
+  - connector
+  - hole
+  - solder mask region
+  - silkscreen region
+

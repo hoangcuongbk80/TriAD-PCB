@@ -1,0 +1,4 @@
+input_resolution,fp16_model_weights_mb,reference_bank_mb,historical_bank_mb,total_persistent_mb,max_stream_length
+256x256,300.6,0.5,6.6,307.7,unbounded
+512x512,300.6,2.1,26.2,328.9,unbounded
+1024x1024,300.6,8.4,104.9,413.9,unbounded

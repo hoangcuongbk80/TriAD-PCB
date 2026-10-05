@@ -1,0 +1,11 @@
+inherits: base.yaml
+dataset:
+  name: tdd
+  manifest: materials/manifests/tdd.csv
+  image_size: 512
+training:
+  epochs: 50
+  batch_size: 16
+output:
+  root: outputs/tdd
+

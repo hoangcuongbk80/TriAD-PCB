@@ -1,0 +1,16 @@
+solder joint
+component pad
+trace
+via
+connector
+hole
+solder mask region
+silkscreen region
+integrated circuit package
+resistor body
+capacitor body
+component pin
+copper pour
+test point
+edge contact
+mounting slot

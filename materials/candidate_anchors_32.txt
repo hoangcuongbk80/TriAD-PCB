@@ -1,0 +1,32 @@
+solder joint
+component pad
+copper trace
+via
+connector
+mounting hole
+solder mask region
+silkscreen region
+integrated circuit package
+resistor body
+capacitor body
+component pin
+copper pour
+test point
+edge contact
+mounting slot
+through-hole lead
+surface-mount terminal
+bonding pad
+plated through-hole
+board edge
+thermal relief
+ground plane
+fiducial marker
+header pin
+socket
+component outline
+exposed copper region
+trace junction
+annular ring
+shielding region
+adhesive region

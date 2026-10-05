@@ -1,0 +1,8 @@
+configuration,i_auc_mean,i_auc_std,i_f1_mean,i_f1_std,i_ap_mean,i_ap_std,p_auc_mean,p_auc_std,p_f1_mean,p_f1_std,p_ap_mean,p_ap_std,pro_mean,pro_std
+clip_ranked_default,92.0,0.2,89.1,0.2,92.3,0.2,98.4,0.1,48.0,0.2,45.4,0.2,91.7,0.2
+random_five_subsets,91.4,0.5,88.5,0.5,91.7,0.5,97.9,0.3,47.1,0.5,44.6,0.5,90.8,0.6
+manual_balanced,91.7,0.2,88.8,0.3,92.0,0.3,98.1,0.2,47.5,0.3,44.9,0.3,91.2,0.3
+normal_paraphrase,91.8,0.2,88.9,0.2,92.1,0.2,98.3,0.1,47.7,0.2,45.1,0.2,91.4,0.2
+abnormal_paraphrase,91.6,0.3,88.7,0.3,91.9,0.3,98.1,0.2,47.4,0.3,44.8,0.3,91.1,0.3
+both_paraphrase,91.4,0.4,88.5,0.4,91.7,0.4,97.9,0.2,47.1,0.4,44.5,0.4,90.8,0.4
+

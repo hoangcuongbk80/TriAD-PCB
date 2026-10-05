@@ -1,0 +1,44 @@
+{
+  "DsPCBSD+": {
+    "total_images": 10259,
+    "normal_images": 9809,
+    "anomalous_images": 450,
+    "normal_training_pool": 9000,
+    "optimization_normal": 8100,
+    "validation_normal": 900,
+    "test_normal": 809,
+    "test_anomalous": 450,
+    "anomalous_test_masks": 450,
+    "defect_categories": 9,
+    "support_size": 4,
+    "network_resolution": "256x256"
+  },
+  "TDD-Net PCB": {
+    "total_images": 12428,
+    "normal_images": 11422,
+    "anomalous_images": 1006,
+    "normal_training_pool": 9920,
+    "optimization_normal": 8928,
+    "validation_normal": 992,
+    "test_normal": 1502,
+    "test_anomalous": 1006,
+    "anomalous_test_masks": 1006,
+    "defect_categories": 6,
+    "support_size": 4,
+    "network_resolution": "512x512"
+  },
+  "VisA PCB": {
+    "total_images": 4416,
+    "normal_images": 4016,
+    "anomalous_images": 400,
+    "normal_training_pool": 3500,
+    "optimization_normal": 3150,
+    "validation_normal": 350,
+    "test_normal": 516,
+    "test_anomalous": 400,
+    "anomalous_test_masks": 400,
+    "defect_categories_by_subset": [4, 4, 4, 7],
+    "support_size_per_subset": 4,
+    "network_resolution": "1024x1024"
+  }
+}

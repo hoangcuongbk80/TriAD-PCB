@@ -1,0 +1,12 @@
+inherits: base.yaml
+dataset:
+  name: visa_pcb
+  manifest: materials/manifests/visa_pcb.csv
+  image_size: 1024
+  categories: [pcb1, pcb2, pcb3, pcb4]
+training:
+  epochs: 30
+  batch_size: 8
+output:
+  root: outputs/visa_pcb
+

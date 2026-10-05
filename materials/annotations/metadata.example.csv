@@ -1,0 +1,2 @@
+dataset,image_id,mask_path,annotator_count,review_status
+DsPCBSD+,example_image,dspcbsd/example_image.png,3,agreement_subset

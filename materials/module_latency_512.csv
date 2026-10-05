@@ -1,0 +1,8 @@
+stage,latency_ms,latency_share_percent,parameter_allocation_m
+Input preprocessing and shared encoder,50.6,63.2,99.3
+Text Branch scoring,3.0,3.8,21.6
+Online Branch matching,11.5,14.4,13.9
+Reference Branch matching,10.2,12.8,15.5
+Confidence-aware fusion and refinement,2.0,2.5,0.0
+Upsampling and output transfer,2.7,3.3,0.0
+Total,80.0,100.0,150.3

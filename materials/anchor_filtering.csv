@@ -1,0 +1,33 @@
+generated_candidate,decision,canonical_anchor,reason
+solder joint,retain,solder joint,localized recurring PCB structure
+component pad,retain,component pad,localized recurring PCB structure
+copper trace,retain,trace,canonicalized wording
+via,retain,via,localized recurring PCB structure
+connector,retain,connector,localized recurring PCB structure
+mounting hole,retain,hole,canonicalized wording
+solder mask region,retain,solder mask region,localized board-surface region
+silkscreen region,retain,silkscreen region,localized board-surface region
+integrated circuit package,retain,integrated circuit package,localized recurring component structure
+resistor body,retain,resistor body,localized recurring component structure
+capacitor body,retain,capacitor body,localized recurring component structure
+component pin,retain,component pin,localized recurring component interface
+copper pour,retain,copper pour,localized conductive region
+test point,retain,test point,localized recurring PCB structure
+edge contact,retain,edge contact,localized recurring PCB structure
+mounting slot,retain,mounting slot,localized recurring PCB structure
+through-hole lead,exclude,,overlaps component pin
+surface-mount terminal,exclude,,ambiguous overlap with component pad and component pin
+bonding pad,exclude,,synonym or near-synonym of component pad
+plated through-hole,exclude,,overlaps via and hole
+board edge,exclude,,too broad and weakly localized as an internal PCB primitive
+thermal relief,exclude,,visually ambiguous at the target resolutions
+ground plane,exclude,,overlaps copper pour
+fiducial marker,exclude,,insufficiently recurrent across the three optimization datasets
+header pin,exclude,,overlaps connector and component pin
+socket,exclude,,overlaps connector
+component outline,exclude,,too broad and visually ambiguous
+exposed copper region,exclude,,overlaps copper pour and trace
+trace junction,exclude,,subtype of trace
+annular ring,exclude,,substructure of via
+shielding region,exclude,,overly broad and not consistently identifiable
+adhesive region,exclude,,not a consistently recurring PCB structural primitive

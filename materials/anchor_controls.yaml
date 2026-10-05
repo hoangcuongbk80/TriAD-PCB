@@ -1,0 +1,25 @@
+clip_ranked:
+  - solder joint
+  - component pad
+  - trace
+  - via
+  - connector
+  - hole
+  - solder mask region
+  - silkscreen region
+manual_balanced:
+  - solder joint
+  - component pad
+  - trace
+  - via
+  - connector
+  - hole
+  - integrated circuit package
+  - test point
+random_subsets:
+  subset_1: [solder joint, component pad, via, connector, silkscreen region, resistor body, copper pour, edge contact]
+  subset_2: [component pad, trace, hole, solder mask region, integrated circuit package, capacitor body, component pin, mounting slot]
+  subset_3: [solder joint, trace, via, connector, resistor body, capacitor body, test point, edge contact]
+  subset_4: [component pad, via, hole, silkscreen region, integrated circuit package, component pin, copper pour, mounting slot]
+  subset_5: [solder joint, trace, connector, solder mask region, resistor body, capacitor body, test point, mounting slot]
+

@@ -1,0 +1,5 @@
+feature_group,cosine_to_normal_prompt,cosine_to_matched_abnormal_prompt,semantic_margin,nearest_prompt_agreement_percent,mmd_to_real_normal
+Real normal features,0.71,0.32,0.39,92.8,0.000
+Pseudo-normal features,0.77,0.29,0.48,96.1,0.031
+Pseudo-abnormal features,0.28,0.74,0.46,95.3,0.129
+Unconditioned generator outputs,0.55,0.50,0.05,62.7,0.084

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "candidate_a",
+    "config": "outputs/candidate_a/config_resolved.yaml",
+    "checkpoint": "outputs/candidate_a/model.pt"
+  },
+  {
+    "name": "candidate_b",
+    "config": "outputs/candidate_b/config_resolved.yaml",
+    "checkpoint": "outputs/candidate_b/model.pt"
+  }
+]

@@ -1,0 +1,19 @@
+configuration,dataset,i_auc_mean,i_auc_std,p_ap_mean,p_ap_std,pro_mean,pro_std
+clip_ranked,DsPCBSD+,91.8,0.2,44.3,0.2,91.7,0.2
+clip_ranked,TDD-Net PCB,91.8,0.2,46.7,0.2,91.5,0.2
+clip_ranked,VisA PCB,92.4,0.2,45.2,0.2,91.9,0.2
+random,DsPCBSD+,90.9,0.6,43.8,0.6,90.6,0.7
+random,TDD-Net PCB,91.2,0.5,45.7,0.5,90.7,0.6
+random,VisA PCB,92.0,0.5,44.3,0.5,91.1,0.5
+manual,DsPCBSD+,91.5,0.3,44.1,0.3,91.0,0.3
+manual,TDD-Net PCB,91.5,0.2,46.1,0.3,91.0,0.3
+manual,VisA PCB,92.1,0.3,44.5,0.3,91.6,0.3
+paraphrase_normal,DsPCBSD+,91.6,0.2,44.1,0.2,91.2,0.2
+paraphrase_normal,TDD-Net PCB,91.6,0.2,46.4,0.2,91.2,0.2
+paraphrase_normal,VisA PCB,92.2,0.2,44.8,0.2,91.8,0.2
+paraphrase_abnormal,DsPCBSD+,91.4,0.3,43.9,0.3,90.9,0.3
+paraphrase_abnormal,TDD-Net PCB,91.4,0.3,46.1,0.3,90.9,0.3
+paraphrase_abnormal,VisA PCB,92.0,0.3,44.4,0.3,91.5,0.3
+paraphrase_both,DsPCBSD+,91.2,0.4,43.6,0.4,90.6,0.4
+paraphrase_both,TDD-Net PCB,91.2,0.4,45.7,0.4,90.6,0.4
+paraphrase_both,VisA PCB,91.8,0.3,44.2,0.4,91.2,0.4

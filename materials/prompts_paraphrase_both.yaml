@@ -1,0 +1,16 @@
+normal_seed_templates:
+  - "a defect-free view of a {anchor}"
+  - "an intact {anchor} on a PCB"
+  - "a correctly formed {anchor}"
+  - "a properly manufactured {anchor} component"
+normal_prompt_templates:
+  - "an intact and clean {anchor}"
+  - "a defect-free {anchor} component"
+  - "a correctly formed PCB {anchor}"
+  - "an undamaged printed circuit board {anchor}"
+abnormal_prompt_templates:
+  - "a fractured {anchor}"
+  - "a {anchor} containing a visible crack"
+  - "an absent {anchor}"
+  - "a {anchor} affected by contamination"
+

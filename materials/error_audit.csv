@@ -1,0 +1,9 @@
+prediction_error,category,count,share_percent
+False negative,Tiny defect below 0.1 percent image area,43,43
+False negative,Low local contrast,31,31
+False negative,Fragmented or boundary-touching defect,12,12
+False negative,Defect embedded in repetitive clutter,14,14
+False positive,Repetitive pads traces or solder joints,38,38
+False positive,Illumination change or specular reflection,29,29
+False positive,Board boundary or local misalignment,18,18
+False positive,Normal contamination-like texture,15,15
